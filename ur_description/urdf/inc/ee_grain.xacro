@@ -29,7 +29,7 @@
     </link>
     <!-- TCP frames -->
     <joint name="${prefix}camera_joint" type="fixed">
-      <origin xyz="0.05715972 -0.105019695 0.049498274" rpy="${pi/2} 0 ${pi/2}"/>
+      <origin xyz="0.05715972 -0.105019695 0.049498274" rpy="0 ${-pi/2} ${pi}"/>
       <parent link="${prefix}end_effector"/>
       <child link="${prefix}camera_tcp"/>
     </joint>
