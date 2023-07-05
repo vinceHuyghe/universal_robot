@@ -36,7 +36,7 @@
     <link name="${prefix}camera_tcp"/>
 
     <joint name="${prefix}gripper_joint" type="fixed">
-      <origin xyz="0.035955506 0 0.128865346" rpy="0 0 ${pi}"/>
+      <origin xyz="0.0 0.0 0.17644" rpy="0 0 ${pi}"/>
       <parent link="${prefix}end_effector"/>
       <child link="${prefix}gripper_tcp"/>
     </joint>
