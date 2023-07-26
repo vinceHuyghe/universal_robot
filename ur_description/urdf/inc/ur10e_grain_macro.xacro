@@ -45,7 +45,7 @@
     />
 
     <xacro:include filename="$(find ur_description)/urdf/inc/ee_grain.xacro"/>
-    <xacro:end_effector prefix="" connected_to="tool0"/>
+    <xacro:end_effector prefix="" connected_to="flange"/>
 
 
   </xacro:macro>
