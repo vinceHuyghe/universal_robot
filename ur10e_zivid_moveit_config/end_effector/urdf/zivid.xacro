@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="https://ros.org/wiki/xacro">
+    <!-- Here we define the 2 parameters of the macro -->
+    <xacro:macro name="end_effector" params="prefix connected_to">
+        <!-- Create a fixed joint with a parameterized name. -->
+        <joint name="${prefix}end_effector_joint" type="fixed">
+            <!-- The parent link must be read from the robot model it is attached to. -->
+            <parent link="${connected_to}" />
+            <child link="${prefix}end_effector" />
+            <!-- The tool is directly attached to the flange. -->
+            <origin rpy="0 0 ${-pi/2}" xyz="0 0 0" />
+        </joint>
+        <link name="${prefix}end_effector">
+            <visual>
+                <geometry>
+                    <!-- The path to the visual meshes in the package. -->
+                    <mesh
+                        filename="$(find ur10e_zivid_moveit_config)/end_effector/meshes/zivid_ee_v.stl" />
+                </geometry>
+                <material name="black">
+                    <color rgba="${0/255} ${0/255} ${0/255} 1.0" />
+                </material>
+            </visual>
+            <collision>
+                <geometry>
+                    <!-- The path to the collision meshes in the package. -->
+                    <mesh
+                        filename="$(find ur10e_zivid_moveit_config)/end_effector/meshes/zivid_ee_c.stl" />
+                </geometry>
+            </collision>
+        </link>
+        <!-- TCP frames -->
+        <joint name="${prefix}camera_joint" type="fixed">
+            <origin xyz="0.05715972 -0.105019695 0.049498274" rpy="0 ${-pi/2} ${pi}" />
+            <parent link="${prefix}end_effector" />
+            <child link="${prefix}camera_tcp" />
+        </joint>
+        <link name="${prefix}camera_tcp" />
+    </xacro:macro>
+</robot>
