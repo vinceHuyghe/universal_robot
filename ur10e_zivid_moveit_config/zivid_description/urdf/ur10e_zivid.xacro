@@ -17,6 +17,6 @@
 
     Refer to 'inc/ur_macro.xacro' for more information.
   -->
-  <xacro:include filename="$(find ur10e_zivid_moveit_config)/end_effector/urdf/ur10e_zivid_macro.xacro"/>
+  <xacro:include filename="$(find ur10e_zivid_moveit_config)/zivid_description/urdf/ur10e_zivid_macro.xacro"/>
   <xacro:ur10e_zivid_robot prefix="" />
 </robot>

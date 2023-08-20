@@ -15,7 +15,7 @@
                 <geometry>
                     <!-- The path to the visual meshes in the package. -->
                     <mesh
-                        filename="$(find ur10e_zivid_moveit_config)/end_effector/meshes/zivid_ee_v.stl" />
+                        filename="$(find ur10e_zivid_moveit_config)/zivid_description/meshes/grain_ee_co.stl" />
                 </geometry>
                 <material name="black">
                     <color rgba="${0/255} ${0/255} ${0/255} 1.0" />
@@ -25,7 +25,7 @@
                 <geometry>
                     <!-- The path to the collision meshes in the package. -->
                     <mesh
-                        filename="$(find ur10e_zivid_moveit_config)/end_effector/meshes/zivid_ee_c.stl" />
+                        filename="$(find ur10e_zivid_moveit_config)/zivid_description/meshes/zivid_ee_c.stl" />
                 </geometry>
             </collision>
         </link>
