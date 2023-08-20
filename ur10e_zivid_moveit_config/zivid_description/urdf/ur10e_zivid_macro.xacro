@@ -44,7 +44,7 @@
       safety_k_position="${safety_k_position}"
     />
 
-    <xacro:include filename="$(find ur10e_zivid_moveit_config)/zivid_description/urdf/zivid.xacro"/>
+    <xacro:include filename="$(find ur10e_zivid_moveit_config)/zivid_description/urdf/zivid_macro.xacro"/>
     <xacro:end_effector prefix="" connected_to="flange"/>
 
 

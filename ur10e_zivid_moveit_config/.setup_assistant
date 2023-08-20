@@ -1,7 +1,7 @@
 moveit_setup_assistant_config:
   URDF:
-    package: ur_description
-    relative_path: urdf/ur10e.xacro
+    package: ur10e_zivid_moveit_config
+    relative_path: zivid_description/urdf/ur10e_zivid.xacro
     xacro_args: ""
   SRDF:
     relative_path: config/ur10e.srdf
