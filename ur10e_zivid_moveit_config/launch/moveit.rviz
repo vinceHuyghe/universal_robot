@@ -4,9 +4,12 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /MotionPlanning1
         - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planned Path1
+        - /TF1
         - /TF1/Frames1
+        - /PoseArray2
       Splitter Ratio: 0.5
     Tree Height: 1152
   - Class: rviz/Help
@@ -132,7 +135,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-        Loop Animation: true
+        Loop Animation: false
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
         Show Robot Collision: false
@@ -265,7 +268,7 @@ Visualization Manager:
       Marker Topic: /trajectory_trace
       Name: MarkerArray
       Namespaces:
-        {}
+        "": true
       Queue Size: 100
       Value: true
     - Class: rviz/TF
@@ -284,7 +287,7 @@ Visualization Manager:
         camera_tcp:
           Value: true
         end_effector:
-          Value: true
+          Value: false
         flange:
           Value: false
         forearm_link:
@@ -308,7 +311,7 @@ Visualization Manager:
       Name: TF
       Show Arrows: true
       Show Axes: true
-      Show Names: true
+      Show Names: false
       Tree:
         world:
           base_link:
@@ -334,12 +337,12 @@ Visualization Manager:
       Marker Topic: /trajectory_trace
       Name: MarkerArray
       Namespaces:
-        {}
+        "": true
       Queue Size: 100
       Value: true
     - Alpha: 1
       Arrow Length: 0.30000001192092896
-      Axes Length: 0.30000001192092896
+      Axes Length: 0.10000000149011612
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
       Color: 255; 25; 0
@@ -370,7 +373,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.1478662490844727
+      Distance: 3.6724493503570557
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -378,17 +381,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.75
       Focal Point:
-        X: -0.10000000149011612
-        Y: 0.25
-        Z: 0.30000001192092896
+        X: -0.0832611694931984
+        Y: 0.3024405837059021
+        Z: 0.35958778858184814
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.08500026911497116
+      Pitch: 0.49499988555908203
       Target Frame: base_link
-      Yaw: 0.386782705783844
+      Yaw: 5.864965438842773
     Saved: ~
 Window Geometry:
   Displays:
