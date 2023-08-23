@@ -11,7 +11,7 @@ Panels:
         - /TF1/Frames1
         - /PoseArray2
       Splitter Ratio: 0.5
-    Tree Height: 1152
+    Tree Height: 912
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -268,7 +268,7 @@ Visualization Manager:
       Marker Topic: /trajectory_trace
       Name: MarkerArray
       Namespaces:
-        "": true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/TF
@@ -296,9 +296,9 @@ Visualization Manager:
           Value: false
         tool0:
           Value: false
-        upper_arm_link:
+        tool0_controller:
           Value: false
-        world:
+        upper_arm_link:
           Value: false
         wrist_1_link:
           Value: false
@@ -313,23 +313,23 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        world:
-          base_link:
-            base:
+        base_link:
+          base:
+            tool0_controller:
               {}
-            base_link_inertia:
-              shoulder_link:
-                upper_arm_link:
-                  forearm_link:
-                    wrist_1_link:
-                      wrist_2_link:
-                        wrist_3_link:
-                          flange:
-                            end_effector:
-                              camera_tcp:
-                                {}
-                            tool0:
+          base_link_inertia:
+            shoulder_link:
+              upper_arm_link:
+                forearm_link:
+                  wrist_1_link:
+                    wrist_2_link:
+                      wrist_3_link:
+                        flange:
+                          end_effector:
+                            camera_tcp:
                               {}
+                          tool0:
+                            {}
       Update Interval: 0
       Value: true
     - Class: rviz/MarkerArray
@@ -337,7 +337,7 @@ Visualization Manager:
       Marker Topic: /trajectory_trace
       Name: MarkerArray
       Namespaces:
-        "": true
+        {}
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -396,7 +396,7 @@ Visualization Manager:
 Window Geometry:
   Displays:
     collapsed: true
-  Height: 1381
+  Height: 1141
   Help:
     collapsed: false
   Hide Left Dock: true
@@ -405,9 +405,9 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000200000000000001560000050ffc0200000006fb000000100044006900730070006c006100790073000000003b0000050f000000c700fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a00560069006500770073000000010c000000a4000000a000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670000000224000001f10000016900ffffff00000003000004fa0000003ffc0100000001fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720100000000000004fa0000010000ffffff000004fa000004ca00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000200000000000001560000041ffc0200000006fb000000100044006900730070006c006100790073000000003b0000041f000000c700fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a00560069006500770073000000010c000000a4000000a000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670000000224000001f10000016900ffffff00000003000003ba0000003ffc0100000001fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720100000000000003ba0000010000ffffff000003ba000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1274
+  Width: 954
   X: 4
   Y: 55
