@@ -5,5 +5,5 @@
         <arg name="kinematics_config"
             value="$(find ur10e_zivid_moveit_config)/config/ur10e_iaac_calibration.yaml" />
     </include>
-    <include file="$(find ur10e_grain_moveit_config)/launch/ur10e_moveit_planning_execution.launch" />
+    <include file="$(find ur10e_zivid_moveit_config)/launch/moveit_planning_execution.launch" />
 </launch>

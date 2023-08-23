@@ -8,5 +8,6 @@
   <!-- Launch moveit -->
   <include file="$(find ur10e_zivid_moveit_config)/launch/move_group.launch">
     <arg name="debug" default="$(arg debug)" />
+    <arg name="load_robot_description" value="true"/>
   </include>
 </launch>
