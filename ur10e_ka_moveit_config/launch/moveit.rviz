@@ -10,7 +10,7 @@ Panels:
         - /TF1
         - /TF1/Frames1
         - /PoseArray2
-      Splitter Ratio: 0.5
+      Splitter Ratio: 0.6647058725357056
     Tree Height: 912
   - Class: rviz/Help
     Name: Help
@@ -88,7 +88,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          camera_tcp:
+          depth_camera_tcp:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -106,6 +106,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          rgb_camera_tcp:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           shoulder_link:
             Alpha: 1
             Show Axes: false
@@ -194,7 +198,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          camera_tcp:
+          depth_camera_tcp:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -212,6 +216,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          rgb_camera_tcp:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           shoulder_link:
             Alpha: 1
             Show Axes: false
@@ -268,7 +276,7 @@ Visualization Manager:
       Marker Topic: /trajectory_trace
       Name: MarkerArray
       Namespaces:
-        {}
+        "": true
       Queue Size: 100
       Value: true
     - Class: rviz/TF
@@ -284,7 +292,7 @@ Visualization Manager:
           Value: false
         base_link_inertia:
           Value: false
-        camera_tcp:
+        depth_camera_tcp:
           Value: true
         end_effector:
           Value: false
@@ -292,14 +300,16 @@ Visualization Manager:
           Value: false
         forearm_link:
           Value: false
+        rgb_camera_tcp:
+          Value: true
         shoulder_link:
           Value: false
         tool0:
           Value: false
-        tool0_controller:
-          Value: false
         upper_arm_link:
           Value: false
+        world:
+          Value: true
         wrist_1_link:
           Value: false
         wrist_2_link:
@@ -309,27 +319,29 @@ Visualization Manager:
       Marker Alpha: 1
       Marker Scale: 1
       Name: TF
-      Show Arrows: true
+      Show Arrows: false
       Show Axes: true
       Show Names: false
       Tree:
-        base_link:
-          base:
-            tool0_controller:
+        world:
+          base_link:
+            base:
               {}
-          base_link_inertia:
-            shoulder_link:
-              upper_arm_link:
-                forearm_link:
-                  wrist_1_link:
-                    wrist_2_link:
-                      wrist_3_link:
-                        flange:
-                          end_effector:
-                            camera_tcp:
+            base_link_inertia:
+              shoulder_link:
+                upper_arm_link:
+                  forearm_link:
+                    wrist_1_link:
+                      wrist_2_link:
+                        wrist_3_link:
+                          flange:
+                            end_effector:
+                              depth_camera_tcp:
+                                {}
+                              rgb_camera_tcp:
+                                {}
+                            tool0:
                               {}
-                          tool0:
-                            {}
       Update Interval: 0
       Value: true
     - Class: rviz/MarkerArray
@@ -337,7 +349,7 @@ Visualization Manager:
       Marker Topic: /trajectory_trace
       Name: MarkerArray
       Namespaces:
-        {}
+        "": true
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -373,7 +385,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.6724493503570557
+      Distance: 4.029175758361816
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -389,9 +401,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.49499988555908203
+      Pitch: 0.225000262260437
       Target Frame: base_link
-      Yaw: 5.864965438842773
+      Yaw: 0.8917884826660156
     Saved: ~
 Window Geometry:
   Displays:
